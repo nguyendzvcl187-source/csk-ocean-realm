@@ -1,0 +1,194 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>⋆˚꩜｡ CSK ୨ৎ Ocean Realm ⋆𐙚 ̊.</title>
+
+<style>
+body{
+margin:0;
+font-family:system-ui;
+background:linear-gradient(180deg,#050816,#0b0f2a,#050816);
+color:white;
+}
+
+.wrap{max-width:1100px;margin:auto;padding:30px}
+
+h1{
+font-size:28px;
+margin:0 0 20px 0;
+background:linear-gradient(90deg,#fff,#9ecbff,#c6a6ff);
+-webkit-background-clip:text;
+color:transparent;
+}
+
+.card{
+background:rgba(255,255,255,.05);
+border:1px solid rgba(255,255,255,.1);
+border-radius:16px;
+padding:16px;
+margin-bottom:20px;
+backdrop-filter:blur(10px);
+}
+
+.item{
+background:rgba(255,255,255,.06);
+border:1px solid rgba(255,255,255,.1);
+padding:12px;
+border-radius:12px;
+margin-bottom:12px;
+cursor:pointer;
+}
+
+.item:hover{background:rgba(255,255,255,.1)}
+
+button{
+background:linear-gradient(90deg,#7c5cff,#00cfff);
+border:none;
+padding:10px 14px;
+border-radius:12px;
+color:white;
+font-weight:bold;
+cursor:pointer;
+}
+
+button:hover{opacity:.9}
+
+pre{
+background:rgba(0,0,0,.4);
+padding:10px;
+border-radius:10px;
+overflow:auto;
+font-size:12px;
+}
+
+.toast{
+position:fixed;
+bottom:20px;
+left:50%;
+transform:translateX(-50%);
+background:#111;
+padding:10px 15px;
+border-radius:20px;
+opacity:0;
+transition:.3s;
+}
+.toast.show{opacity:1}
+</style>
+</head>
+
+<body>
+
+<div class="wrap">
+
+<h1>⋆˚꩜｡ CSK ୨ৎ Ocean Realm ⋆𐙚 ̊.</h1>
+
+<div class="card">
+<h3>💎 PREMIUM SCRIPTS [ BLOX FRUITS ]</h3>
+
+<div class="item" onclick="copy(this)">
+<b>🐱 Banana Cat Hub (Paid + Best)</b>
+<pre>
+repeat wait() until game:IsLoaded() and game.Players.LocalPlayer 
+getgenv().Key = "Input Key"
+loadstring(game:HttpGet("https://raw.githubusercontent.com/obiiyeuem/vthangsitink/main/BananaHub.lua"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🦊 Maru Hub (Paid Version)</b>
+<pre>
+(getgenv()).key = "Input Key";
+(getgenv()).id = "Input Your Discord ID";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruComkak/main/PCBit.lua"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🌀 Tsuo Hub</b>
+<pre>
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Tsuo7/TsuoHub/main/Tsuoscripts"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🌌 Astral Hub</b>
+<pre>
+loadstring(game:HttpGet("https://raw.githubusercontent.com/Overgustx2/Main/refs/heads/main/BloxFruits_25.html"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🦊 Maru Hub (Free)</b>
+<pre>
+script_key = "YOUR KEY";
+loadstring(game:HttpGet("https://raw.githubusercontent.com/xshiba/MaruHub/main/Loader.lua"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>⚡ Speed Hub X</b>
+<pre>
+loadstring(game:HttpGet("https://raw.githubusercontent.com/AhmadV99/Speed-Hub-X/main/Speed%20Hub%20X.lua", true))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🔴 Redz Hub</b>
+<pre>
+local Settings = { JoinTeam = "Pirates"; Translator = true; }
+loadstring(game:HttpGet("https://raw.githubusercontent.com/tlredz/Scripts/refs/heads/main/main.luau"))(Settings)
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🎅 Hoho Hub</b>
+<pre>
+loadstring(game:HttpGet("https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+<div class="item" onclick="copy(this)">
+<b>🌊 W-Azure</b>
+<pre>
+getgenv().Team = "Marines"
+getgenv().AutoLoad = false
+loadstring(game:HttpGet("https://api.luarmor.net/files/v3/loaders/3b2169cf53bc6104dabe8e19562e5cc2.lua"))()
+</pre>
+<button>Copy Script</button>
+</div>
+
+</div>
+
+<div class="card">
+<h3>💬 Cộng đồng CSK</h3>
+<a href="https://discord.gg/GZBKsRxY25" target="_blank">
+<button>Tham gia Discord</button>
+</a>
+</div>
+
+</div>
+
+<div class="toast" id="toast">Đã copy script ✔</div>
+
+<script>
+function copy(el){
+let code = el.querySelector("pre").innerText;
+navigator.clipboard.writeText(code);
+let t=document.getElementById("toast");
+t.classList.add("show");
+setTimeout(()=>t.classList.remove("show"),1500);
+}
+</script>
+
+</body>
+</html>
